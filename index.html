@@ -952,27 +952,27 @@ function showSlides() {
 //player
 document.addEventListener("DOMContentLoaded", function () {
     const videoLinks = [
-       "https://imdb-video.media-imdb.com/vi204126745/1434659607842-pgv4ql-1546707262218.mp4?Expires=1718179535&Signature=JBkP9y0h1uxImIZUYLIE5R2nJgGjksXejVlhK~UBz~UIBWIof3ln-kZbuMN-RcNECyTLVA1KyL6qgTU1VggQEF3bMUNeieSRlUuYblGeFeuBiOoQG7Yae-lslSpvVR3kyP5M2cwwl5QObZQoQEOWyKb8jOAr8uDwAsUmllYiflYydyKmsYS2HmyXnZpPImWLMO40hf3DhdbXUevaPLzUXYsI6XLC3KTslwFha5e5Ng1UMZfsnE~0~A4zSLNJywEE5u81oqUV2BbI2AgVvRfv-wdjJ4tIqMu8kknu5723nYOx7XXKPy0feEQmBuRwHrw2cE6vSoFgYw55gaNBbcW60w__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA",
-       "",
-       "https://imdb-video.media-imdb.com/vi516605721/1434659607842-pgv4ql-1697658259631.mp4?Expires=1718179503&Signature=s6juZyc8BxCAfSGqyta39~6tPdY5-ZRsH5cN8e0iY6bN7H46nBW8-K2avmdFOW9eZnNL8yQmlACjVIQEEHbe4voyuzBxXaLgRvywLf4pNtObskvJfvxL8t6ggxCFFpWw-qvKsoZ~rkJv9TiOfNOdi54xRyl8GR3oqPPeyFYrFYPCw-vjmQs7LsmCHiZCS~VvU4ZG-X2g3G4WMSH0fBvZAg4Vv8svW-c-ss4AlVeW-4z5XmSaKmMB4IBfinBwA5VeOtDxG9f6f0B-mzmu-yYu6yAPeMqlxBLo9-uzkRodm~ca-Pd7au-hnUGb~zp1i2x3PbszBaqE9ck~vM8EOGNauw__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA",
-       "",
-       "",
-       "https://imdb-video.media-imdb.com/vi2601763609/1434659607842-pgv4ql-1642776024595.mp4?Expires=1718179348&Signature=l7L0Vcah82Qpd1AnRPtkxWRRXxNY1K2rySMjpWff3JxbxYxlKr9PQ-qhBD99thz~rv9s23YJaVBs0kKRc4koxh-ORx1zylh6OFSNEjtwZOIYLyWeGxTF2-Xch~i4PyEdWAQIZR9kzadZiXMk1qRn6z0nNCNRO4HxnRYm9WO62dI6tC~Hrb0v8BQCeM~EOSKd-GG5YRz6c4enSd8WbhhmlASWsOgxNaFT~2VxeVwDfbWZ~~eD7Ao9sA7eX3GQ65mgwDQ1jnQtil88UofldcCSI3Hd1YoMjS-0k--Q3YRMX3Vbk5MQksIktVwXvnVo-50VAPMiW-aqYIA5CQeyW~m7Xg__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA",
-       "",
-       "https://imdb-video.media-imdb.com/vi4028349209/1434659607842-pgv4ql-1535109473880.mp4?Expires=1718179532&Signature=djHAxWvWb2Ua~22z5eTlZHELuvQJVXN3ikX~Pg~evvvksccpX5QnkYzI1P0XOFBX3331su8kepetl40sgiFWLqLaloCBQ6ojlXnv4vy1s36E5TqyJ8uGYC9wOyRyc058vAcacELD9Nr6IYGjaZVskFJuWlFu6eqp6vRmLZNweTC5IRho6~Ivc31796sJZq2mR8qk-R1UmA4vZod-9u6ao85UdmCr9tslSrXURmSisUrH7HBdvg0Z2WMLp2rag3gVi3iTK2rsdMqvElcZSPqNm7KRz7eOu~o61aZgEjDX9mrNSUK69~nfEbEdhU-P-a-gij32kZCwpKF4Yi3476PbnQ__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA",
-       "",
-       "https://imdb-video.media-imdb.com/vi3488725785/1434659607842-pgv4ql-1529153124647.mp4?Expires=1718179668&Signature=Wy~faks1CLXATXFBommPSU3Oc6yl2HBhJnLqtuewdLe7sDaFWrItOJaBgeVUBM~PXIdMtEgsnMDrTNWhus8LsTuFpMJnUiSZ19HQUsvayL0q0I10CuC9jjv1wAy0WnqC0VdGcC--BDTfxb49fsH4MbOpI3IrrsVFJPml351WqqD4X4Fz8oBcKb~o91aU6NI2rF-gszO2fi9C~STvxaon5-TKw2lAYQeBDGVJCayYA73gIttwXrGzMr9jxE6utbRMbccHeKJz0kfn5X5A7qjfqbGRiVaLWoH~VRu~C6036DdABZl8Psww33-DZGVlvogu~ZRhY6e8g7AHYdTDuyIppw__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA",
-       "https://imdb-video.media-imdb.com/vi4084645913/1434659607842-pgv4ql-1626958957682.mp4?Expires=1718179194&Signature=Khy~QxV3WvYxooKWkw2gfhjuPUWfJLkhceF~NTHRS28dJwNfeG9mO1tGQoV9otOSnl1kjie6gSz1SehHA1pT~daOD7FqW-pKfKbI6f9uCZVzbrBcg7DAheMA7uucgbH3gDK6tIVovf2dMsbXFhTvaEtvN~3I0FJrSRUWWq8yY~RX3NY62P~d3V74IgmSnMjPd0FPBkP4HURBDFvXzsD2DexDq7oYQ-W6mTT6SrWZZuUBPpKNmERo0UIVimPU~f-tIeKLi6RUyxVqdakev19yMQKqFKobqF9q~mdqRknnqkjLzHmajr9kZhnOg3MSjGbTrQu5yFEW~MH8m7Z-ouT9ag__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA",
-       "https://imdb-video.media-imdb.com/vi2199699481/1434659607842-pgv4ql-1625215475879.mp4?Expires=1718178660&Signature=ltJdBxJm3kiUeSE0Uc~R1aFTodn757Q~jLJecmA8yC7SQZDb8jrZWWA2Mv6jZ~VEOIihsz2f1BAcYAlPiujAg25KbrddFJS36r~iGTC60PXpVO~-MpZzfUZJcrI5P9~iv2TPhLxcNpqMIEoBqwFRGc0F1QGH8Ql7zqRObQ~tgARS~LsCkVpkqiZahVoKjNTe8M3Y27Q380BwQOwbmAo0LoEUTRheITHdbYT1woJaD5cX2bYZ0gCYNZuQtayXgZcRfMUiIq1m02WqRwIBHri0fcHTz3RioruFvGAZDAEDER43u79PfDI5AixRnp-IbDw0GqTa9LgvyboLTu9-O0WJLg__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA",
-       "",
-       "",
-       "",
-       "https://imdb-video.media-imdb.com/vi3149511449/1434659607842-pgv4ql-1526502459118.mp4?Expires=1718179940&Signature=D5w2uwYEmZVJTX8CtS7t1MeLHToZkEVNR5DEvszAqIvIXkwGs3WLWAAlSh6AKTyG4Dk9nFrN8ll8nimExJtpCqxhF~JQ54iT9Okg6PAuwIdTR0iDg6h9eGvQj4GVum5Ft31agz3fkm1fTrE6kIJnhjuUXcVqEbQPNeYfEC-hT579U2zW~b9wA8icL0GrSdTus7JqWTjjDWLkDb-xGsU22-aNgDCtwZYjItTv0EcWawjmXAkVj~X~BS-VAIeMbEUeQEpqaaVzCUOsCDG97Ifq6QGgKX0~V5nlHGR-DIn-4ipVyXr67wd4te3M1-~KGvn6Rox8N0We0-6RtHDM~jBQDw__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA",
-       "https://imdb-video.media-imdb.com/vi159893017/1434659607842-pgv4ql-1711820236438.mp4?Expires=1718182040&Signature=E223OHF0UF8C6ttn8-LWUcG5j4dYJ3SiaffaAQVhaq92DXaLujpTFfG2chgNBrOBzplG4ee86fNsLKXdcRl5Q-WhWXg1az1SeI6aM9odJ2o~1~YqMY2EVtItEISMylI-moZKE-fjZ-WkD-BbOaUs0khhjXhh0jGn5uDbH2BDXFvwmXBo393xkVufsFFsC2OjG0Q9VTQqZ0xGldN77wGfsZsmzJN1wsgYJ6gqnhmxKmA2Cu1g-uQnYlXg4JtmnyKltsbMFddGLPA1NfbbGRGA04GWMuGTAupSTvDkoapeIlgpwcNFBXOHLwYNQAbEa6-AW7JkLA0uCSXnxkuMFLRb7A__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA",
-       "https://imdb-video.media-imdb.com/vi2260319001/1434659607842-pgv4ql-1526502199366.mp4?Expires=1718182042&Signature=X1fjY0-i23~aqDX0Xxw~xHRfKCKJDKTBpjQf1vQhZPYNCl2vEVY-J5BkZk3n343OEmvDV02ym1CZN8Mhuf-~K61NqEjZ5~ToSmecY7bSwFpMQ0QiJF8iWDe2GkL3iLv4AOXk5hWU~knLBSR6FyT5pgGnMlDkBe9O~qhfwGw8tTqidkoXc4oL7R0LJ~s6QPiu3uqGb81ihpa0yPD6Uays8b428vpaWk0q1YeCSxZdpJOa8M7pDHLToIJZNQd5SMHGPbrgn4vcbS5EEWheQKLDoqIK6u59eUcdoPHZBOEHrtvfbfuZUJGO1e4KnxbM1wClc7KyrtI4cAQQUlXhJxgsdw__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA",
-       "https://imdb-video.media-imdb.com/vi1274264857/1434659607842-pgv4ql-1552977898708.mp4?Expires=1718181657&Signature=DTQNel7of99gyST-1~FglSGyTrLSZiCzZhRkTWAaGUQGxHG0WWm0~zb4B2NfNispvNx6CEdiRXFtFyGznnYeY7JiDugNgcJ2JVyZCJIxhc7mdo-FvBDuYWISdMi58yGV4NSajEMsOC2up0dTw~hmrgxpvXohB68LUgkn0VuNlsdalNF6t4LEAYuYWaEAOh3w3Yqyt5uPbE4UGr8thhl8j6Eg7Y0~SC8x0T3WiVwGZwHFR0I7nyTbwxQcdCZbp2wCS5He9YB42J6YPaL1-vWPQvYvG-vm3H1JokA1Y7zpDhL4KaG5LCqY~IOa7fit79Wb8v~upCv~XYcvdAKCuyW4dA__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA",
-       "https://imdb-video.media-imdb.com/vi2981739289/1434659607842-pgv4ql-1526502988257.mp4?Expires=1718181307&Signature=Hv~XGPQdSyz5gi78HN1BlcxGvEgF64TUVAheDskFaF9leL2WluCqHqLwbTu0ydCwu9BhEWlV87V5czO-HQFamSZcwhuhsqDIjV1kOCZxUqfJYbyd0CitBcXPaEWZIiITWxBkiOCHIf2-Bs6lWTVOmf2pTzXaktBZLQP7~OAA3GMp2Zo-6WfPjp0bknlsyskYVdyY5CIqBB-jKTi08vdRYyY9ZKJSo7V79C60UUhwpkijH6P~Uih2aC08fLLyN3uqFWeVfA5hXc6WHl3y4L-TdO-I-izUxuv2BTpPWJpu4orTBiCqsicK8lzhAetOOP4~pXfaOYvTLRaDm4yOb46DMg__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA",
-       "https://imdb-video.media-imdb.com/vi2110897945/1434659607842-pgv4ql-1572725228549.mp4?Expires=1718182046&Signature=otifoNpYnljx3nOkRWan~jJYBH8rq2uMxHUAsq1~GEexQZJ~MFqTrL4Hx0m04sr-EGr26vEUSIUYgBF4XehGGSK5sRjOXTWvKLjnnJqBY2GS8UTJPPq9inkDe-Ptki06NKT0HvuKPR4THgWwUhcDs6hwhihivU3ZQzkEeBCvI4a6s0T1IVhhmBVPsa2efW44u~QAEfpdpZj~RkLouQsOFWLmi7LocZBocN7SlZRH5~kzHt6qVVlAh2bEEH1EuJhAISTbWaUK~Awes17m-YXRi7Sf7o33EIfPS3vcKVRhoT4mmYah1fNnkvMqEC5BFSJzTyib18OHpymojZfxQK5vLQ__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA"
+      "Taarak Mehta ka Ooltah Chashmah.mp4",
+        "Kaun Banega Crorepati.mp4",
+        "Bigg Boss.mp4",
+        "CID.mp4",
+        "Crime Patrol.mp4",
+        "Naaginn.mp4",
+        "Best of Luck Nikki.mp4",
+        "The Kapil Sharma Show.mp4",
+        "Chidiya Ghar.mp4",
+        "Ramayan.mp4",
+        "Anupamaa.mp4",
+        "Saath Nibhaana Saathiya.mp4",
+        "India's Got Talent.mp4",
+        "F.I.R..mp4",
+        "Balika Vadhu.mp4",
+        "Diya Aur Baati Hum.mp4",
+        "Yeh Rishta Kya Kehlata Hai.mp4",
+        "Iss Pyaar Ko Kya Naam Doon.mp4",
+        "Bhabi Ji Ghar Par Hai.mp4",
+        "Mahabharat.mp4",
+        "BaalVeer Returns.mp4"
     ];
 
     const videoNames = [
