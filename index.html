@@ -958,111 +958,79 @@ function showSlides() {
 //player
 document.addEventListener("DOMContentLoaded", function () {
     const videoLinks = [
-        "Money Heist.mp4",
-        "Aspirants.mp4",
-        "Berlin.mp4",
-        "Half CA.mp4",
-        "School Friends.mp4",
-        "ISHQ Express.mp4",
-        "Crushed.mp4",
-        "Maharani.mp4",
-        "Scam 2003.mp4",
-        "Rocket Boys.mp4",
-        "College Romance.mp4",
-        "Kota Factory.mp4",
-        "Gullak.mp4",
-        "Scam 1992.mp4",
-        "Flames.mp4",
-        "The Night Manager.mp4",
-        "Panchayat.mp4",
-        "Squid Games.mp4",
-        "Farzi.mp4",
-        "Mirzapur.mp4",
-        "Hostal Daze.mp4",
-        "Sultan Of Delhi.mp4",
-        "Made In Heaven.mp4",
-        "Taaza Khabar.mp4",
-        "Hostages.mp4",
-        "Bhaukaal.mp4",
-        "Saas Bahu Aur Flamingo.mp4",
-        "The Railway Men.mp4",
-        "Heeramandi.mp4",
-        "Indori Ishq.mp4",
-        "Operation MBBS.mp4",
-        "ImMATURE.mp4"  
+      "Taarak Mehta ka Ooltah Chashmah.mp4",
+        "Kaun Banega Crorepati.mp4",
+        "Bigg Boss.mp4",
+        "C.I.D..mp4",
+        "Crime Patrol.mp4",
+        "Naagin.mp4",
+        "Best of Luck Nikki.mp4",
+        "The Kapil Sharma Show.mp4",
+        "Chidiya Ghar.mp4",
+        "Ramayan.mp4",
+        "Anupamaa.mp4",
+        "Saath Nibhaana Saathiya.mp4",
+        "India's Got Talent.mp4",
+        "F.I.R..mp4",
+        "Balika Vadhu.mp4",
+        "Diya Aur Baati Hum.mp4",
+        "Yeh Rishta Kya Kehlata Hai.mp4",
+        "Iss Pyaar Ko Kya Naam Doon.mp4",
+        "Bhabi Ji Ghar Par Hai.mp4",
+        "Mahabharat.mp4",
+        "BaalVeer Returns.mp4"
     ];
 
     const videoNames = [
-        `<h1 style="font-size: 40px;">Money Heist</h1>`,
-        "Aspirants",
-        "Berlin",
-        "Half CA",
-        "School Friends",
-        "ISHQ Express",
-        "Crushed",
-        "Maharani",
-        "Scam 2003",
-        "Rocket Boys",
-        `<h1 style="font-size: 30px;">College Romance</h1>`,
-        "Kota Factory",
-        "Gullak",
-        "Scam 1992",
-        "Flames",
-        `<h1 style="font-size: 27px;">The Night Manager</h1>`,
-        "Panchayat",
-        "Squid Games",
-        "Farzi",
-        "Mirzapur",
-        "Hostal Daze",
-        `<h1 style="font-size: 30px;">Sultan Of Delhi</h1>`,
-        `<h1 style="font-size: 30px;">Made In Heaven</h1>`,
-        "Taaza Khabar",
-        "Hostages",
-        "Bhaukaal",
-        `<h1 style="font-size: 30px;">Saas Bahu Aur<br>Flamingo</h1>`,
-        `<h1 style="font-size: 30px;">The Railway Men</h1>`,
-        "Heeramandi",
-        "Indori Ishq",
-        `<h1 style="font-size: 30px;">Operation MBBS</h1>`,
-        "ImMATURE"
+        `<h1 style="font-size: 30px;">Taarak Mehta ka<br>Ooltah Chashmah</h1>`,
+        `<h1 style="font-size: 30px;">Kaun Banega<br>Crorepati</h1>`,
+        "Bigg Boss",
+        "CID",
+        "Crime Patrol",
+        "Naaginn",
+        `<h1 style="font-size: 30px;">Best of Luck Nikki</h1>`,
+        `<h1 style="font-size: 30px;">The Kapil Sharma<br>Show</h1>`,
+        "Chidiya Ghar",
+        "Ramayan",
+        "Anupamaa",
+        `<h1 style="font-size: 30px;">Saath Nibhaana<br>Saathiya</h1>`,
+        `<h1 style="font-size: 30px;">India's Got Talent</h1>`,
+        "F.I.R.",
+        "Balika Vadhu",
+        `<h1 style="font-size: 30px;">Diya Aur Baati<br>Hum</h1>`,
+        `<h1 style="font-size: 30px;">Yeh Rishta Kya<br>Kehlata Hai</h1>`,
+        `<h1 style="font-size: 30px;">Iss Pyaar Ko Kya<br>Naam Doon</h1>`,
+        `<h1 style="font-size: 30px;">Bhabi Ji Ghar Par<br>Hai</h1>`,
+        "Mahabharat",
+        `<h1 style="font-size: 30px;">BaalVeer Returns</h1>`
     ];
 
     const videoTexts = [
-        "To carry out the biggest heist in history, a mysterious man called The Professor recruits a band of eight robbers who have a single characteristic: none of them has anything to lose. Five months of seclusion memorizing every step, every detail, every probability culminate in eleven days locked up in the National Coinage and Stamp Factory of Spain, surrounded by police forces and with dozens of hostages in their power, to find out whether their suicide wager will lead to everything or nothing.",
-        "Aspirants is a story of 3 friends - Abhilash, Shwetketu(SK) and Guri. The story revolves around the past and the present time where the past captures the struggle and the drama behind the making of UPSC CSE aspirants in Old Rajinder Nagar of Delhi, while the present talks about the aftermath. It is the story of three UPSC aspirant's journey and most importantly - their friendship besides all odds!",
-        "Back to his golden age before the events of Money Heist, Berlin and a masterful gang gather in Paris to plan one of his most ambitious robberies ever.",
-        "Two CA Aspirants from two different ends of the spectrum of the course, Archie and Niraj embark on the journey of one of the toughest courses and face the obstacles it has to offer.",
-        "A slice-of-life show that explores the lives of 5 quirky school teenagers who've just entered 11th Commerce, as they navigate friendships, heartbreaks, peer pressures, more importantly figuring out who they really want to be. All this in a society that finds it difficult to cope with the fast-changing Gen Z world.",
-        "The love story of Aarav and Tanya who meet while boarding a train to their hometown. What follows is a cute love story with the duo entangled in mutual, yet unspoken feelings for each other without any pretence, judgement, or any inhibitions. While Aarav develops feelings for Tanya, she does not reciprocate. Will the two reunite or Aarav be left heartbroken is what needs to be seen.",
-        "Samvidhan a.k.a Sam and Aadhya, two sidekicks, have always lived in the shadows of their popular best friends and gone completely unnoticed in Lucknow Central Convent school. Until the two of them finally take notice of each other, albeit under awkward and unusual circumstances, and a surprisingly easy friendship begins. For the first time in their lives, they feel like they belong. But will falling in love be as easy, and for how long can two sidekicks remain heroes of their own love story, before insecurities, changing dynamics and growing pains get the better of them?",
-        "A political drama set in Bihar of 1990's. With its caste arithmetic, traditional satraps and the emerging voice...will an illiterate woman Rani Bharti (Huma Qureshi) survive this? Rani Bharti (Huma Qureshi) is a homemaker and the wife of Bihar's chief minister Bheema (Sohum Shah). All she cares about is her house and her husband. She wants to pack her bags and go back to the village after her husband resigns from the post of Bihar's CM. But her life takes a turn when her husband and Bihar's CM is made to announce the name of his successor. While his party members look excited to hear who has been appointed, he makes Rani his successor, leaving everyone surprised.",
-        "Born in Khanapur in Karnataka, Telgi became the mastermind behind one of the most ingenious schemes in Indian history that spread across multiple states and shook the entire country.",
-        "The story of two extraordinary men, Dr. Homi Jehangir Bhabha and Dr. Vikram Ambalal Sarabhai, who created history while building India's future.",
-        "Three best friends look for love, laughs and some lifelong memories while attending college together.",
-        "Dedicated to Shrimati SL Loney ji, Shri Irodov ji and Maanniya HC Verma ji, 'Kota Factory' is TVF's latest original. India's first 'Black and White' show highlights the problems present day IIT-JEE aspirants face in their day-to-day lives.",
-        "What do you expect stories from a small town in the heart of North India to be like? Filled with shades of grey, petty crime, sorrow and stories of revenge? You couldn't be further from the truth and Gullak will show you how. Set in quaint by-lanes in the heart of India, Gullak is a collection of disarming and relatable tales of the Mishra family. Join Santosh and Shanti Mishra, their sons Annu and Aman, as they savour the many flavours of a small-town life with a smattering of humour, wit and of course, ladleful's of love.",
-        "Set in early 90's Bombay, Scam 1992: The Harshad Mehta Story captures the meteoric rise and fall of Harshad Mehta- the flamboyant big bull of the stock market. When feisty financial journalist Sucheta Dalal exposed him as the man behind India's biggest financial scam of the time, it shook the nation.",
-        "FLAMES #PadhaiAurPyaar is the story of a young romance unfolding as a chemical reaction. Head-of-the-class Rajat falls for Ishita, the new girl in the tuition centre. Rajat's BFFs Pandey and Anusha's friendship is turning into a relationship. The friendship equations evolve in this teen romance's first season. This web series takes you back to the time when everything seemed innocent--when the idea of spending time with your crush meant helping each other with homework--the rosy teenage days when finding love and topping exams were the only aims in life.",
-        "Follows Shaan Sengupta, an ex-soldier, who must infiltrate an arms dealer's inner circle to bring down his empire of war.",
-        "Panchayat is a comedy-drama, which captures the journey of an engineering graduate Abhishek, who for lack of a better job option joins as secretary of a panchayat office in a remote village of Uttar Pradesh. Stuck between crazy villagers and a difficult village lifestyle Abhishek starts his job with the sole motivation of getting out of there as soon as possible, for which he even prepares for CAT.",
-        "A story of people who fail at life for various reasons, but suddenly receive a mysterious invitation to participate in a survival game to win more than 38 million US dollars. The game takes place on an isolated island and the participants are locked up until there is a final winner. The story incorporates popular Korean children's games from the 1970s and 1980s, such as squid game, the literal translation of its Korean name, which is a type of tag where offense and defense use a squid-shaped board drawn in the dirt.",
-        "An artist who gets pulled into the murky high stakes of a con job and a fiery task force officer on the mission to rid the country of his menaces in a fast-paced, edgy one-of-a-kind thriller.",
-        "The iron-fisted Akhandanand Tripathi is a millionaire carpet exporter and the mafia don of Mirzapur. His son, Munna, is an unworthy, power-hungry heir who will stop at nothing to inherit his father's legacy. An incident at a wedding procession forces him to cross paths with Ramakant Pandit, an upstanding lawyer, and his sons, Guddu and Bablu. It snowballs into a game of ambition, power and greed that threatens the fabric of this lawless city!",
-        "Four naive and vulnerable wing-mates (Ankit, Chirag, Jaat, and Jhantoo) develop lasting bonds as they jostle hard to survive the first semester in a hostel. Peppered with absurdities, chutzpahs, clashes and debacles inherent to hostel life, 'Hostel Daze' depicts the grill that every Indian hostel-resident goes through.",
-        "The journey of Arjun Bhatia and explores a tale of greed, betrayal, courage and the ultimate fight for power",
-        "Made In Heaven chronicles the lives of Tara and Karan, two wedding planners based in Delhi. India is a potent blend of old and new. Tradition jostles with modern aspirations against the backdrop of a Big Fat Indian Wedding revealing many secrets and many lies. The supposedly liberal fabric of the upper crust unravels as the duo navigate through arranged marriages, dowry transactions and virginity tests.",
-        "A Sanitation worker, how he stumbles upon magical powers which leads to a riveting new ride for the man, and how it stirs his humble life.",
-        "Surgeon Dr. Mira Anand (Tisca Chopra) is scheduled to perform a routine operation on the chief minister, but the night before the procedure, her family is taken hostage and she is ordered to assassinate her unwitting patient in order to save her family, forcing her to make a decision. The story starts a week after season 1. Handa is still under captivity and the whole crew is about to move to Nepal to perform the bone marrow operation. When Handa tries to escape, an unexpected change of plan leads the team to take refuge in a dilapidated old mansion where shooting results in a hostage situation. When new players and motives behind the original plan is revealed more complex situation rises which Prithvi now has to overcome including saving his daughter's life.",
-        "When the deeply driven and newlywed, Naveen Sikhera gets promoted and sent to Muzaffarnagar, the ' crime capital of India' as the Senior Superintendent of Police, his peers and media dub it more as a punishment. Muzaffarnagar is ruled by two gangs, Mohammad Shaukeen Khan and the Dedha brothers who had systematically divided the land into two parts . With no witnesses willing to testify and the police seemingly fearful of wanting to apprehend the known culprits, Naveen charts out his three-pronged strategy. First, the Police force needs to start believing in themselves, second, have the locals rekindle their faith in the Police and third, let it be known to the gangsters that Naveen Sikhera wouldn't bow down till he makes Muzaffarnagar the safest district of the heartland. He includes his Meerut team in his operation, infiltrates his moles into the gangs, begins mobile surveillance, battles the media and politicians, wins the respect of both the locals and his very own Police force with his drive to clean the system. Taking the reins in his hands, Sikhera starts cleansing the city and undertakes numerous encounters leading to the destruction of the Shaukeen gang and making in-roads into the operations of the Dedha gang. This is the story of a man who left a cushy life and soon became one of the most feared and loved officers but with a price to pay, but then again every revolution is built on sacrifices and this one unfortunately had it's unfair share.",
-        "Savitri, the matriarch of a massive cartel in the lawless Borderlands, opens up a battle for succession to find her heir in a murky world of drugs and violence ",
-        "After a deadly gas leaks from a factory in Bhopal, brave railway workers risk their lives to save others in the face of an unspeakable disaster.",
-        "Arch nemeses Mallikajaan and Fareedan are locked in a battle for succession of Heeramandi, where courtesans reign as queens. The only hope is young Alam, Mallikajaan's youngest daughter. But what happens when Alam relinquishes power and chooses the love of one man over the adulation of many?",
-        "The story begins with amusing attempts of twelfth-grader, Kunal, to woo his classmate, Tara. Kunal finally manages to propose to Tara and their love story begins. After his schooling, Kunal leaves Indore and moves to Mumbai to join a Naval College. Soon his sober life turns upside-down when Tara dumps him for someone else. In no time, Kunal turns into an alcoholic and chain smoker, and without taking admission in the naval college, he moves to a weird rundown room in Darukhana, spending days doing nothing but drinking, smoking, and missing Tara. Later Kunal gets played by Tara once again as things turn up against his fate",
-        "Operation MBBS chronicles the lives of three first year students - Huma, Sakshi and Nishant in one of the best MBBS colleges in the country. Follow their journey as they navigate through friendships, hardships and medical student life.",
-        "A 5-episode coming-of-age story about the many first adventures in a young man's life. Dhruv is 16, and in a hurry to grow up. With a little help from his school friends, the wannabe bad-boy Kabir, and the color-blind but doesn't know it Susu, Dhruv sets out to woo the first crush of his life, the feisty, out-of-his-league class topper, Chhavi. Venturing out of their childhood, in their last years of school, the trio find their first drink, pick their first fight and mend their first broken heart."
+        "The series revolves around the lives of the residents of Gokuldham Co-operative Housing Society in Goregaon, Mumbai, and in particular the family of Jethalal Gada. Taarak Mehta is his friend, philosopher and guide. Although primarily a family comedy, the episodes are often centered on socially relevant issues.",
+        "An Indian version of the popular quiz show, Who Wants to be a Millionaire? Contestants start off with easy questions, but as they move forward the questions get more and more challenging. To help them out, they are given lifelines that let them either eliminate two of the four possible answers, call a friend at home for help, or take a poll of the audience for what they think the right answer is.",
+        "Bigg Boss is a reality show based on the original Dutch Big Brother. A number of contestants (known as housemates) live in a purpose-built house and are isolated from the rest of the world. Each week, housemates nominate two of their fellow housemates for eviction, and the housemates who receives the most nominations would face a public vote. Eventually, one housemate would leave after being convicted from the House. In the final week, there were five housemates remaining, and the public voted for who they wanted to win. Housemates are overseen by a mysterious person known as 'Bigg Boss', whose only presence in the house is through his voice.",
+        "The first thrilling investigative series on Indian Television is also one of the most popular shows on Sony Entertainment Television. Dramatic and absolutely unpredictable, C.I.D. has captivated viewers over the last twenty years and continues to keep audiences glued to their television sets with its thrilling plots and excitement. Also interwoven in its fast-paced plots are the personal challenges that the C.I.D. team faces with non-stop adventure, tremendous pressure and risk, all in the name of duty. The series consists of hard-core police procedural stories dealing with investigation, detection and suspense. The protagonists of the serial are an elite group of officers belonging to the Crime Investigation Department, led by ACP Pradyuman (played by the dynamic Shivaji Satam). While the stories are plausible, there is an emphasis on dramatic plotting and technical complexities faced by the police. At every stage, the plot throws up intriguing twists and turns keeping the officers on the move as they track criminals, led by the smallest of clues.",
+        "Crime Patrol attempts to bring stories of crime happening all around the country. However the case presentation would be a story telling form that would have the interest of a fiction drama presentation. The prelude and finale to the case would make the case a complete story. Interactions with the analysts on the show would be treated with the audience interest point of view keeping it only as much as essential to the story telling. Going beyond the drama of police action in a crime situation, the show also aims to look into the why behind a crime. Police action on one hand gives the show the edge of how the law keepers bring the culprits to book or stop a crime from being committed. On the other hand, the show will also be looking at the sociological aspect behind a crime- both from the victim as well as the criminal's side. The cases would be driven by cameras moving along with the police force from the time a crime is reported or when the police receive a call till the point the case is brought to a logical conclusion in the police records for further movement in the court of law.",
+        "A miraculous shape-shifting snake has the power to become a human. She can be anybody she wants: a wife, a seductress, a mistress, a damsel in distress--all in the name of revenge.",
+        "The Series about a Singh family, who try to adjust to the birth of their fourth child, Nikki (Ananaya). In each episode, Dolly Singh (Sheena Bajaj) creates a video diary containing advice for Nikki about their family and life as a teenager. Dolly tries to show Nikki what she might go through in the video diary so she can always know how to figure things out when she get's older.",
+        "Comedian Kapil Sharma interacts with celebrity guests about their latest films while keeping the audience laughing with his wit, humour and assorted skits.",
+        "A comedy and educational show revolving around a house named Chidiyaghar, named after the late wife of a retired principal Kesari Narayan, his two sons and their wives respectively. The names of the family members resemble animals they make a happy family. The family members not only entertain each other with their weird activities but raise social issues and seek to solve them with affection.",
+        "One of the greatest epics, Ramayan, written by Valmiki, unravels the journey of Lord Rama, right from his marriage to Sita to the slaying of Ravana. Rama, the eldest son of King Dashratha, is the heir apparent to the throne of Ayodhya, but Dashratha is compelled by Kaikeyi to make her son Bharat the king. Kaikeyi further asks Dashratha to send Rama on exile for 14 years, so Rama willingly agrees. He leaves, accompanied by Sita and his younger brother Laxmana. However, when Bharat learns of his mother's viciousness, he goes to the jungle to persuade Rama to return to Ayodhya. But he comes back only with Rama's sandals that he places on the throne. Years later, Sita is abducted by Ravana, the King of Lanka. Rama, with the help of the Monkey God Hanuman and Laxmana, goes to Lanka to slay Ravana and bring back Sita.",
+        "Anupamaa sacrificed a lot to become a loyal wife, a devoted daughter-in-law, and a loving mother, only to be disrespected in return. After the bitter realization, she sets out to live on .",
+        "Gopi is in extreme depression after Ahem's passing, has not smiled or talked in 4 years. Kokila decides to accept Dr. Krishna Raheja's proposal of him marrying Gopi; on the wedding day, Gopi recovers, only to be unwilling forced to marry Dr. Krishna. Jigar and Paridhi have undergone major personality changes and are no longer the caring and family-oriented persons. Paridhi had kicked out Sahir, Sonakshi and their two sons out of Modi Bhavan, and gets Jigar's other son Samar married to Monica, an arrogant fashionista. Meanwhile, Meera hates Vidya as she holds the latter responsible for the former's miscarriage, while the real culprit is Naiyya, Shravan's sister. Gopi vows to reunite the Modis by taking over the family business, and eventually succeeds. It is revealed that Krishna is Mansi's brother, and him, Mansi and Pramila (his mother) have come to take revenge on Gopi. Kokila hires Ahem's look-a-like (Jaggi, illegitimate son of Parag and Urvashi), to rescue Gopi.",
+        "An Indian reality television series on Colors television network, and part of the global Got Talent variety acts reality series.",
+        "Centered around a Haryanvi female police officer named Chandramukhi Chautala and her funny subordinates. The show depicts their lives as they try to solve every case which comes to Imaan Chowki in a comical and unusual way.",
+       "In ancient times in India there was a time when children got married and then when the time comes they live together.This film surely tells the story of that marriage and tells it greatly. In a village circa the British rule in India, lives a young school-going male named Amal, who is shortly to get married to a girl named Rajni.The traditional ritual-filled marriage takes place, the young couple are then left alone for a few days, and this is where the two develop their love and friendship. Then Rajni must return to her parents' house, while Amal continues with his studies in school, and at home with Masterji, an elderly teacher. His life is enlivened occasionally when Rajni is permitted to visit. Rajni next visit is scheduled for Durga Pooja, but she does not come, instead she comes at Vijay Dashami, to stay there for a couple nights, before going on a Tirth Yatra with her family, where they are scheduled to visit all the holy places in India namely, Benaras, Gaya, Mathura, Vrindavan, Hardwar, Nasik, Hrishikesh, Dwarka, Rameshwaram, Kamakshya, Puri, and Konarak. But before that could happen their little world is shattered when the gentle Masterji is arrested by the police for being a Freedom-fighter, harboring and training fugitives, and making explosives. Watch whether this incident will affect Amal and Rajni or otherwise.",
+       "Sandhya had always dreamt of becoming a police officer. She was fearless and forthright and made it her life's aim to fight the ills of society. Her father encouraged her dream and just when it was within her reach, tragedy strikes. Her parents pass away. Her brother marries her off into a family of confectioners where women only work in the kitchen. She becomes part of a family that required her to be a housewife and within a matter of days; her life had turned Topsy-turvy. With a heavy heart, she decides to give up her dreams and aspirations, but her confectioner husband; Suraj gets to know about her dream and her sacrifice for the sake of his family. Although only semi-literate, Suraj felt the burning desire within Sandhya to follow her dreams and achieve her goals of becoming a police officer. Despite everything that stood in his way, Suraj decides to support her in her journey. But will he be able to convince his own mother, Bhabo, whose firm belief was that a woman's place is inside the kitchen? Will Suraj help Sandhya achieve her dream, thereby rightfully earning the title of Sandhya's soulmate......?",
+       
+       "The story was about Akshara and Naitik who were bounded by a forcefully arranged marriage thrust upon them by hypocritical society, carried on for seasons as Akshara saved lives (as one does) while being sanskari and lovable.Kartik and Naira, two individuals deeply in love, extremely nosey in everyone's lives and personifications of justice. Yeh Rishta Kya Kehlata Hai is a neverending tale of reformatted stories that talks about how two people meet, time and again, which leads to their relationship progressing further with each encounter. It also shows why people chose to live in nuclear families.",
+       "Arnav, a wealthy business tycoon, decides to ruin Khushi's reputation after he thinks she sabotaged one of his events. Meanwhile, Khushi quietly suffers for the crimes she didn't commit.",
+       "Loveless marriages and jealousy characterize two neighboring households as they try to cope with each other and themselves.",
+      "The mother of all wars, the epitome of all rivalries, the cauldron of emotions, insecurities, jealousies, and power play - Mahabharat.",
+      "Balveer is an ordinary child, who is whisked away to Pari Lok at a young age and is blessed with the power of the six fairies."
     ];
 
-    for (let i = 1; i <= 32; i++) {
+    for (let i = 1; i <= 24; i++) {
         let button = document.getElementById('button' + i);
         if (button) {
             button.addEventListener('click', function () {
@@ -1268,7 +1236,6 @@ function handleButtonClick(videoUrl, videoName, videoText) {
             }
 
             .namemovie {
-                
                 padding-left: 9vh;
                 padding-top: 20px;
             }
@@ -1572,10 +1539,6 @@ function handleButtonClick(videoUrl, videoName, videoText) {
                 .right {
                     all: revert;
                 }
-
-                .sessions {
-                  gap: 10px;
-                 }
                 
                 .right {
                     background-color: black;
@@ -1592,51 +1555,6 @@ function handleButtonClick(videoUrl, videoName, videoText) {
                 .footerbelow {
                     all: revert;
                 }
-
-                .S01 {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                width: 65px;
-                height: 27px;
-                border: 3px solid black;
-                border-radius: 4px;
-                }
-
-                .S01 button {
-                display: inline-flex;
-                align-items: center;
-                justify-content: center;
-                width: 65px;
-                height: 27px;
-                text-decoration: none;
-                font-weight: bold;
-                font-family: 'Segoe UI';
-                border: none;
-                cursor: pointer;
-                gap: 15px;
-                }
-
-                .sessionbutton1 {
-                  border-radius: 4px;
-                }
-
-                .sessionbutton2 {
-                 border-radius: 4px;
-                }
-
-                .sessionbutton3 {
-                  border-radius: 4px;
-                }
-
-                .sessionbutton4 {
-                 border-radius: 4px;
-                }
-
-                .sessionbutton5 {
-                border-radius: 4px;
-                }
-
                 
                 .copy {
                     padding-bottom: 20px;
@@ -1679,13 +1597,8 @@ function handleButtonClick(videoUrl, videoName, videoText) {
                 }
                 
                 .title{
-                    color: aqua;
                     padding-top: 20px;
                     padding: 10px;
-                }
-                
-                .title h1{
-                  font-size: 35px;
                 }
                 
                 .dis{
@@ -1732,7 +1645,7 @@ align-items: center;
 justify-content: center;
 width: 80px;
 height: 30px;
-border: 4px solid black;
+border: 3px solid black;
 border-radius: 8px;
 }
 
@@ -1754,35 +1667,30 @@ gap: 15px;
 background-color: white;
 color: black;
 border-radius: 8px;
-border: none;
 }
 
 .sessionbutton2 {
 background-color: white;
 color: black;
 border-radius: 8px;
-border: none;
 }
 
 .sessionbutton3 {
 background-color: white;
 color: black;
 border-radius: 8px;
-border: none;
 }
 
 .sessionbutton4 {
 background-color: white;
 color: black;
 border-radius: 8px;
-border: none;
 }
 
 .sessionbutton5 {
 background-color: white;
 color: black;
 border-radius: 8px;
-border: none;
 }
 
 .episode-list {
@@ -1844,28 +1752,10 @@ background-color: rgb(77, 242, 242);
 const webSeriesData = [
     {
         sessions: [
-            { number: 1 },
-            { number: 2 },
-            { number: 3 },
-            { number: 4 },
-            { number: 5 },
+            { number: 1 }
         ],
         episodes: [
-            ["S1.E1 - Efectuar lo acordado", "S1.E2 - Imprudencias letales", "S1.E3 - Errar al disparar", "S1.E4 - Caballo de Troya", "S1.E5 - El día de la marmota", "S1.E6 - La cálida Guerra Fría", "S1.E7 - Refrigerada inestabilidad", "S1.E8 - Tú lo has buscado", "S1.E9 - El que la sigue la consigue"],
-            ["S2.E1 - Se acabaron las máscaras", "S2.E2 - La cabeza del plan", "S2.E3 - Cuestión de eficacia", "S2.E4 - ¿Qué hemos hecho?", "S2.E5 - A contrarreloj", "S2.E6 - Bella ciao"],
-            ["S3.E1 - Hemos vuelto", "S3.E2 - Aikido", "S3.E3 - 48 metros bajo el suelo", "S3.E4 - La hora del delfín", "S3.E5 - Bum, bum, ciao", "S3.E6 - Todo pareció insignificante", "S3.E7 - Pequeñas vacaciones", "S3.E8 - La deriva"],
-            ["S4.E1 - Game over", "S4.E2 - La boda de Berlín", "S4.E3 - Lección de anatomía", "S4.E4 - Suspiros de España", "S4.E5 - 5 minutos antes", "S4.E6 - KO técnico", "S4.E7 - Tumbar la carpa", "S4.E8 - Plan París"],
-            ["S5.E1 - El final del camino", "S5.E2 - ¿Crees en la reencarnación?", "S5.E3 - El espectáculo de la vida", "S5.E4 - Tu sitio en el cielo", "S5.E5 - Vivir muchas vidas", "S5.E6 - Válvulas de escape", "S5.E7 - Ciencia ilusionada", "S5.E8 - La teoría de la elegancia", "S5.E9 - Lo que se habla en la cama", "S5.E10 - Una tradición familiar"]
-        ]
-    },
-    {
-        sessions: [
-            { number: 1 },
-            { number: 2 }
-        ],
-        episodes: [
-            ["S1.E1 - UPSC - Optional Me Kya Hai?", "S1.E2 - Teacher Sahi Hona Chahiye", "S1.E3 - Positive Approach Rakh Yaar", "S1.E4 - Plan B", "S1.E5 - Pre... Mains Aur Life"],
-            ["S2.E1 - Self Study", "S2.E2 - Strategy", "S2.E3 - Murphy's Law", "S2.E4 - Mock Interview", "S2.E5 - Final Interview"]
+            ["S1.E1 ∙ Episode #1", "S1.E2 ∙ Episode #2", "S1.E3 ∙ Episode #3", "S1.E4 ∙ Episode #4","S1.E5 ∙ Episode #5","S1.E6 ∙ Episode #6","S1.E7 ∙ Episode #7","S1.E8 ∙ Episode #8","S1.E9 ∙ Episode #9","S1.E10 ∙ Episode #10",]
         ]
     },
     {
@@ -1873,16 +1763,7 @@ const webSeriesData = [
             { number: 1 }
         ],
         episodes: [
-            ["S1.E1 ∙ La energía del amor","S1.E2 ∙ El ancla y el lobo","S1.E3 ∙ Póker de embriones","S1.E4 ∙ Un aquarium en la espalda","S1.E5 ∙ After Love","S1.E6 ∙ La noche de los limones","S1.E7 ∙ La última virgen de occidente","S1.E8 ∙ Un elefante en peligro de extinción"]
-        ]
-    },
-
-    {
-        sessions: [
-            { number: 1 }
-        ],
-        episodes: [
-            ["S1.E1 ∙ CA Kyu Karna Hai?","S1.E2 ∙ Overhead Expenses","S1.E3 ∙ Write Off","S1.E4 ∙ Group 1 Group 2","S1.E5 ∙ Balance Sheet"]
+            ["S1.E1 ∙ Episode #1", "S1.E2 ∙ Episode #2", "S1.E3 ∙ Episode #3", "S1.E4 ∙ Episode #4","S1.E5 ∙ Episode #5","S1.E6 ∙ Episode #6","S1.E7 ∙ Episode #7","S1.E8 ∙ Episode #8","S1.E9 ∙ Episode #9","S1.E10 ∙ Episode #10",]
         ]
     },
     {
@@ -1890,7 +1771,7 @@ const webSeriesData = [
             { number: 1 }
         ],
         episodes: [
-            ["S1.E1 ∙ Bhutte Bane Popcorn","S1.E2 ∙ Stuti Ko Kaise Pataun?","S1.E3 ∙ Kisne Mara Atom Bomb?","S1.E4 ∙ POV: CCTV","S1.E5 ∙ Masala Mass Bunk","S1.E6 ∙ Stuti Ko Kaise Manau?","S1.E7 ∙ Mistri Bane Kalakar","S1.E8 ∙ 200 Ka Ek","S1.E9 ∙ Surprise Test Pro Max","S1.E10 ∙ Stuti Kahan Hai Yaar?","S1.E11 ∙ Who's the hottie?","S1.E12 ∙ Gaurav - Bhagao Andolan","S1.E13 ∙ That's What Friends Do","S1.E14 ∙ Dosti Ka Interval","S1.E15 ∙ Analysis - E - Anirban","S1.E16 ∙ School Bani Pathshala","S1.E17 ∙ Gender - Bender!","S1.E18 ∙ Head Girl Kaun Hai?","S1.E19 ∙ Abey Ye Kya Ho Gaya?"]
+            ["S1.E1 ∙ Episode #1", "S1.E2 ∙ Episode #2", "S1.E3 ∙ Episode #3", "S1.E4 ∙ Episode #4","S1.E5 ∙ Episode #5","S1.E6 ∙ Episode #6","S1.E7 ∙ Episode #7","S1.E8 ∙ Episode #8","S1.E9 ∙ Episode #9","S1.E10 ∙ Episode #10",]
         ]
     },
     {
@@ -1898,33 +1779,7 @@ const webSeriesData = [
             { number: 1 }
         ],
         episodes: [
-            ["S1.E1 ∙ Status - RAC","S1.E2 ∙ Status - CNF","S1.E3 ∙ Wl"]
-        ]
-    },
-    {
-        sessions: [
-            { number: 1 },
-            { number: 2 },
-            { number: 3 },
-            { number: 4 },
-        ],
-        episodes: [
-            ["S1.E1 - Super Sidey", "S1.E2 - Crime and Punishment", "S1.E3 - Bulati Hai Magar...", "S1.E4 - Maa Ki Aankh", "S1.E5 - Mera Pehla Pehla Valentine Hai", "S1.E6 - Final Exam"],
-            ["S2.E1 ∙ Sam Kahan Hai?","S2.E2 ∙ Naam Wahi, Dosti Nayi","S2.E3 ∙ Emotions Ki Wrong Delivery","S2.E4 ∙ Chemistry","S2.E5 ∙ Time Time Ki Baat Hai","S2.E6 ∙ Winners and Losers"],
-            ["S3.E1 ∙ Azaadi","S3.E2 ∙ Ice Breaker","S3.E3 ∙ Surprise Ya Shock","S3.E4 ∙ Saahdhaani Hati Durghatna Ghati","S3.E5 ∙ Dil Dosti Dooriyan","S3.E6 ∙ Picture Abhi Baaki Hai Mere Dost"],
-            ["S4.E1 ∙ Dekho, Woh Aa Gaya!","S4.E2 ∙ Hungama ho gaya!","S4.E3 ∙ Mujhse Dosti Karoge?","S4.E4 ∙ Humko saathi mil gaya","S4.E5 ∙ Do dil mil rahe hain, Magar..","S4.E6 ∙ Fir Milenge... Chalte Chalte..."]
-        ]
-    },
-    {
-        sessions: [
-            { number: 1 },
-            { number: 2 },
-            { number: 3 }
-        ],
-        episodes: [
-            ["S1.E1 ∙ Jaati Na Poochho Saadhu Ki","S1.E2 ∙ Dekh Tamasha Kursi Ka","S1.E3 ∙ Ghoonghat Ke Pat Khol","S1.E4 ∙ Saadho Ye Murdo Ka Gaaon","S1.E5 ∙ Kaun Thagwa Nagriya Lootal Ho Rama","S1.E6 ∙ Na Kaahu Se Dosti Na Kahu Se Bair","S1.E7 ∙ Bahot Kathin Hai Dagar Panghat Ki","S1.E8 ∙ Maya Maha Thagni Hum Jaani","S1.E9 ∙ Chah Gyi Chinta Miti Manuaa Beparwaah","S1.E10 ∙ Jo Ghar Phoonke Aapno Chale Humare Saath"],
-            ["S2.E1 ∙ Jungle Raj","S2.E2 ∙ Daagi Bane Baagi","S2.E3 ∙ Vibhajan","S2.E4 ∙ Ashirvaad","S2.E5 ∙ Vinashkale Viprite Buddhi","S2.E6 ∙ Pati, Patni aur Woh","S2.E7 ∙ Kingmaker","S2.E8 ∙ Sheh Aur Maat","S2.E9 ∙ Hawamahal","S2.E10 ∙ Mastermind"],
-            ["S3.E1 ∙ Pareksha Ki Tayari","S3.E2 ∙ Andhere Mein","S3.E3 ∙ Charo Khane Chit","S3.E4 ∙ Behti Ganga","S3.E5 ∙ Nyay ya Badla","S3.E6 ∙ Maati ka Khilona","S3.E7 ∙ Raj Tilak","S3.E8 ∙ Bihar Ki Maharani"]
+            ["S1.E1 ∙ Episode #1", "S1.E2 ∙ Episode #2", "S1.E3 ∙ Episode #3", "S1.E4 ∙ Episode #4","S1.E5 ∙ Episode #5","S1.E6 ∙ Episode #6","S1.E7 ∙ Episode #7","S1.E8 ∙ Episode #8","S1.E9 ∙ Episode #9","S1.E10 ∙ Episode #10",]
         ]
     },
     {
@@ -1932,55 +1787,7 @@ const webSeriesData = [
             { number: 1 }
         ],
         episodes: [
-            ["S1.E1 ∙ Paisa Kamaya Nahin Banaya Jata Hain","S1.E2 ∙ Choomantar","S1.E3 ∙ Khota Sikka","S1.E4 ∙ Mubarak Ho Aapko Stamp Paper Hua Hain","S1.E5 ∙ I Love You","S1.E6 ∙ Abracadabra","S1.E7 ∙ Logic Ka Magic","S1.E8 ∙ Mumbai Ka King","S1.E9 ∙ Bina Daant Ka Sher","S1.E10 ∙ Truth Serum"]
-        ]
-    },
-    {
-        sessions: [
-            { number: 1 },
-            { number: 2 }
-        ],
-        episodes: [
-            ["S1.E1 ∙ War and Peace","S1.E2 ∙ It's Like Gravity","S1.E3 ∙ The Greater Good","S1.E4 ∙ A Tryst with Destiny","S1.E5 ∙ The Outsider","S1.E6 ∙ The Democratic Process","S1.E7 ∙ We are at War","S1.E8 ∙ A New Dawn"],
-            ["S2.E1 ∙ Lift Off","S2.E2 ∙ Burden Of Proof","S2.E3 ∙ A Lasting Legacy","S2.E4 ∙ The Price Of War","S2.E5 ∙ Behind Enemy Lines","S2.E6 ∙ Power Over Peace","S2.E7 ∙ The Last Guard","S2.E8 ∙ Smiling Buddha"]
-        ]
-    },
-    {
-        sessions: [
-            { number: 1 },
-            { number: 2 },
-            { number: 3 },
-            { number: 4 }
-        ],
-        episodes: [
-            ["S1.E1 ∙ The Hint", "S1.E2 ∙ Tommy", "S1.E3 ∙ Paneer Sex Masala", "S1.E4 ∙ Spank Me", "S1.E5 ∙ Happily Fucked Up"],
-            ["S2.E1 ∙ Penguins", "S2.E2 ∙ Double Trouble", "S2.E3 ∙ Growing up", "S2.E4 ∙ Sub-group", "S2.E5 ∙ Long Distance Friendship"],
-            ["S3.E1 ∙ Happy Ending", "S3.E2 ∙ No More Secrets", "S3.E3 ∙ Loser", "S3.E4 ∙ Beer & Whiskey", "S3.E5 ∙ Problem Kya Hai?"],
-            ["S4.E1 ∙ Aaya Hosh?", "S4.E2 ∙ Lies and Secrets", "S4.E3 ∙ Secret Trip", "S4.E4 ∙ Adulting", "S4.E5 ∙ Farewell"]
-        ]
-    },
-    {
-        sessions: [
-            { number: 1 },
-            { number: 2 }
-        ],
-        episodes: [
-            ["S1.E1 ∙ Inventory", "S1.E2 ∙ Assembly Line", "S1.E3 ∙ Optimization", "S1.E4 ∙ Shut Down", "S1.E5 ∙ Overhaul"],
-            ["S2.E1 ∙ Reasoning", "S2.E2 ∙ Control System", "S2.E3 ∙ Atmospheric Pressure", "S2.E4 ∙ Repair & Maintenance", "S2.E5 ∙ Packaging"]
-        ]
-    },
-    {
-        sessions: [
-            { number: 1 },
-            { number: 2 },
-            { number: 3 },
-            { number: 4 }
-        ],
-        episodes: [
-            ["S1.E1 ∙ Tehri","S1.E2 ∙ Hum Do Hamare Do","S1.E3 ∙ Itwaar","S1.E4 ∙ Batti Aa Gayi","S1.E5 ∙ Tyohaar"],
-            ["S2.E1 ∙ Bijlee Ka Bill","S2.E2 ∙ Cheeni Kam, Paani Zyaada","S2.E3 ∙ Saparivaar","S2.E4 ∙ Kal Board ka Paper hai","S2.E5 ∙ Kiraana"],
-            ["S3.E1 ∙ Mission Admission","S3.E2 ∙ LTA","S3.E3 ∙ Agua","S3.E4 ∙ Satyanarayan Varta Katha","S3.E5 ∙ Izzat Ki Chamkaar"],
-            ["S4.E1 ∙ 'Kaaran Batau' Notice","S4.E2 ∙ Chinaiti","S4.E3 ∙ Ghar Ka Kabaad","S4.E4 ∙ Teesra Pahiya","S4.E5 ∙ Pita, Putra aur Prempatra"]
+            ["S1.E1 ∙ Episode #1", "S1.E2 ∙ Episode #2", "S1.E3 ∙ Episode #3", "S1.E4 ∙ Episode #4","S1.E5 ∙ Episode #5","S1.E6 ∙ Episode #6","S1.E7 ∙ Episode #7","S1.E8 ∙ Episode #8","S1.E9 ∙ Episode #9","S1.E10 ∙ Episode #10",]
         ]
     },
     {
@@ -1988,22 +1795,7 @@ const webSeriesData = [
             { number: 1 }
         ],
         episodes: [
-            ["S1.E1 ∙ Risk Se Ishq", "S1.E2 ∙ Cobra Killer", "S1.E3 ∙ Paise Ki Dukaan", "S1.E4 ∙ Harshad Mehta Is A Liar", "S1.E5 ∙ Kundali Mein Shani", "S1.E6 ∙ Stop Press", "S1.E7 ∙ Dalal Street Ka Dariya", "S1.E8 ∙ Matador", "S1.E9 ∙ Ek Crore Ka Suitcase", "S1.E10 ∙ Main History Banana Chahta Hoon"]
-        ]
-    },
-    {
-        sessions: [
-            { number: 1 },
-            { number: 2 },
-            { number: 3 },
-            { number: 4 }
-        ],
-        episodes: [
-            ["S1.E1 ∙ Pehla Nasha", "S1.E2 ∙ Dil To Baccha Hai Ji", "S1.E3 ∙ Ae Kash Ke Hum", "S1.E4 ∙ Kya Se Kya Ho Gaya", "S1.E5 ∙ Meri Soni Meri Tamanna"],
-            ["S2.E1 ∙ Kuch Toh Hua Hai, Kuch Hogaya Hai", "S2.E2 ∙ Chhukar Mere Mann Ko", "S2.E3 ∙ Mera Dil Bhi Kitna Pagal Hai", "S2.E4 ∙ Aane Wala Pal Jaane Wala Hai", "S2.E5 ∙ Agar Tum Saath Ho"],
-            ["S3.E1 ∙ Baahon Mein Chale Aao", "S3.E2 ∙ Chupana Bhi Nahi Aata, Jataana Bhi Nahi Aata", "S3.E3 ∙ Jab Koi Baat Bigad Jaaye", "S3.E4 ∙ Khoya Khoya Chand", "S3.E5 ∙ Kuch Tum Kaho Kuch Hum Kahein"],
-            ["S4.E1 ∙ Kabhi Toh Nazar Milao, Kabhi To Kareeb Aao", "S4.E2 ∙ Ye Kahan Aagaye Hum", "S4.E3 ∙ Yaad Aenge Ye Pal", "S4.E4 ∙ Pyar Humein Kis Mod Pe Le Aaya", "S4.E5 ∙ O Saathi Re, Tere Bina Bhi Kya Jeena"]
-
+            ["S1.E1 ∙ Episode #1", "S1.E2 ∙ Episode #2", "S1.E3 ∙ Episode #3", "S1.E4 ∙ Episode #4","S1.E5 ∙ Episode #5","S1.E6 ∙ Episode #6","S1.E7 ∙ Episode #7","S1.E8 ∙ Episode #8","S1.E9 ∙ Episode #9","S1.E10 ∙ Episode #10",]
         ]
     },
     {
@@ -2011,19 +1803,7 @@ const webSeriesData = [
             { number: 1 }
         ],
         episodes: [
-            ["S1.E1 ∙ Zakhm","S1.E2 ∙ Mission","S1.E3 ∙ Mehmaan","S1.E4 ∙ Sweetly-waala","S1.E5 ∙ Abhimanyu","S1.E6 ∙ Magic Trick","S1.E7 ∙ Imarti"]
-        ]
-    },
-    {
-        sessions: [
-            { number: 1 },
-            { number: 2 },
-            { number: 3 }
-        ],
-        episodes: [
-            ["S1.E1 ∙ Gram Panchayat Phulera","S1.E2 ∙ Bhootha Ped","S1.E3 ∙ Chakke Wali Kursi","S1.E4 ∙ Hamara Neta Kaisa Ho?","S1.E5 ∙ Computer Nahi Monitor","S1.E6 ∙ Bahot Hua Samman","S1.E7 ∙ Ladka Tez Hai Lekin..","S1.E8 ∙ Jab Jaago Tabhi Savera"],
-            ["S2.E1 ∙ Naach","S2.E2 ∙ Bol Chaal Band","S2.E3 ∙ Kranti","S2.E4 ∙ Tension","S2.E5 ∙ Jaise Ko Taisa","S2.E6 ∙ Aukaat","S2.E7 ∙ Dost Yaar","S2.E8 ∙ Parivaar"],
-            ["S3.E1 ∙ Rangbaazi","S3.E2 ∙ Gaddha","S3.E3 ∙ Ghar Ya Eent-Patthar?","S3.E4 ∙ Atma Manthan","S3.E5 ∙ Shanti Samjhauta","S3.E6 ∙ Chingaari","S3.E7 ∙ Shola","S3.E8 ∙ Hamla"]
+            ["S1.E1 ∙ Episode #1", "S1.E2 ∙ Episode #2", "S1.E3 ∙ Episode #3", "S1.E4 ∙ Episode #4","S1.E5 ∙ Episode #5","S1.E6 ∙ Episode #6","S1.E7 ∙ Episode #7","S1.E8 ∙ Episode #8","S1.E9 ∙ Episode #9","S1.E10 ∙ Episode #10",]
         ]
     },
     {
@@ -2031,7 +1811,7 @@ const webSeriesData = [
             { number: 1 }
         ],
         episodes: [
-            ["S1.E1 ∙ Mugunghwa kkoch-i pideon nal","S1.E2 ∙ Ji-ok","S1.E3 ∙ Usan-eul sseun namja","S1.E4 ∙ Jjollyeodo pyeonmeokgi","S1.E5 ∙ Pyeongdeung-han sesang","S1.E6 ∙ Kkanbu","S1.E7 ∙ VIPS","S1.E8 ∙ Peulonteu maen","S1.E9 ∙ Unsu joeun nal"]
+            ["S1.E1 ∙ Episode #1", "S1.E2 ∙ Episode #2", "S1.E3 ∙ Episode #3", "S1.E4 ∙ Episode #4","S1.E5 ∙ Episode #5","S1.E6 ∙ Episode #6","S1.E7 ∙ Episode #7","S1.E8 ∙ Episode #8","S1.E9 ∙ Episode #9","S1.E10 ∙ Episode #10",]
         ]
     },
     {
@@ -2039,33 +1819,7 @@ const webSeriesData = [
             { number: 1 }
         ],
         episodes: [
-            ["S1.E1 ∙ Artist", "S1.E2 ∙ Social Service", "S1.E3 ∙ CCFART", "S1.E4 ∙ Dhanrakshak", "S1.E5 ∙ Second Oldest Profession", "S1.E6 ∙ Cat and Mouse", "S1.E7 ∙ Supernote", "S1.E8 ∙ Crash and Burn"]
-        ]
-    },
-    {
-        sessions: [
-            { number: 1 },
-            { number: 2 }
-        ],
-        episodes: [
-            ["S1.E1 ∙ Jhandu", "S1.E2 ∙ Gooda", "S1.E3 ∙ Wafadar", "S1.E4 ∙ Virginity", "S1.E5 ∙ Bhaukal", "S1.E6 ∙ Barfi", "S1.E7 ∙ Lions Of Mirzapur", "S1.E8 ∙ Tandav", "S1.E9 ∙ Yogya"],
-            ["S2.E1 ∙ Dhenkul", "S2.E2 ∙ Khargosh", "S2.E3 ∙ Viklaang Quota", "S2.E4 ∙ Bhaymukt", "S2.E5 ∙ Langda", "S2.E6 ∙ Ankush", "S2.E7 ∙ Ood Bilaav", "S2.E8 ∙ Chauchak", "S2.E9 ∙ Butterscotch", "S2.E10 ∙ King of Mirzapur"]
-        ]
-    },
-
-   
-    {
-        sessions: [
-            { number: 1 },
-            { number: 2 },
-            { number: 3 },
-            { number: 4 }
-        ],
-        episodes: [
-          ["S1.E1 ∙ Intro","S1.E2 ∙ Proving Identity","S1.E3 ∙ F.O.S.L.A","S1.E4 ∙ GPL","S1.E5 ∙ End Sem"],
-          ["S2.E1 ∙ D.I.S.C.O","S2.E2 ∙ Love-Square","S2.E3 ∙ Gandagi","S2.E4 ∙ Ghar Wapsi"],
-          ["S3.E1 ∙ Failed Experiments","S3.E2 ∙ Wing Chor","S3.E3 ∙ Lights Camera Cut","S3.E4 ∙ Dosti Ka Udhar","S3.E5 ∙ G.S.H.A","S3.E6 ∙ Dear Seniors"],
-          ["S4.E1 ∙ Single Room","S4.E2 ∙ Curriculum Vitae","S4.E3 ∙ Compromise","S4.E4 ∙ Day Zero","S4.E5 ∙ The Offer","S4.E6 ∙ Hostel Departure"]
+            ["S1.E1 ∙ Episode #1", "S1.E2 ∙ Episode #2", "S1.E3 ∙ Episode #3", "S1.E4 ∙ Episode #4","S1.E5 ∙ Episode #5","S1.E6 ∙ Episode #6","S1.E7 ∙ Episode #7","S1.E8 ∙ Episode #8","S1.E9 ∙ Episode #9","S1.E10 ∙ Episode #10",]
         ]
     },
     {
@@ -2073,17 +1827,7 @@ const webSeriesData = [
             { number: 1 }
         ],
         episodes: [
-            ["S1.E1 ∙ The Scar","S1.E2 ∙ Sweet Smell of Success","S1.E3 ∙ Kiss of Love","S1.E4 ∙ Bombay Confidential","S1.E5 ∙ Return of the Game","S1.E6 ∙ Nights in White Satin","S1.E7 ∙ The Crown","S1.E8 ∙ Feud","S1.E9 ∙ Till Death Do Us Part"]
-        ]
-    },
-    {
-        sessions: [
-            { number: 1 },
-            { number: 2 }
-        ],
-        episodes: [
-            ["S1.E1 ∙ All That Glitters is Gold","S1.E2 ∙ Star Struck Lovers","S1.E3 ∙ It's Never Too Late","S1.E4 ∙ The Price of Love","S1.E5 ∙ A Marriage of Convenience","S1.E6 ∙ Something Old, Something New","S1.E7 ∙ A Royal Affair","S1.E8 ∙ Pride and Bridezilla","S1.E9 ∙ The Great Escape"],
-            ["S2.E1 ∙ Mirror Mirror on the Wall","S2.E2 ∙ Beauty and the Beast","S2.E3 ∙ And They Lived Happily Ever After","S2.E4 ∙ Love Story","S2.E5 ∙ The Heart Skipped a Beat","S2.E6 ∙ Warrior Princesses","S2.E7 ∙ A Taste of Heaven"]
+            ["S1.E1 ∙ Episode #1", "S1.E2 ∙ Episode #2", "S1.E3 ∙ Episode #3", "S1.E4 ∙ Episode #4","S1.E5 ∙ Episode #5","S1.E6 ∙ Episode #6","S1.E7 ∙ Episode #7","S1.E8 ∙ Episode #8","S1.E9 ∙ Episode #9","S1.E10 ∙ Episode #10",]
         ]
     },
     {
@@ -2091,27 +1835,7 @@ const webSeriesData = [
             { number: 1 }
         ],
         episodes: [
-            ["S1.E1 ∙ Khabardaar","S1.E2 ∙ Vardaan","S1.E3 ∙ Azaadi","S1.E4 ∙ Kismat","S1.E5 ∙ Baazi","S1.E6 ∙ Shraap"]
-        ]
-    },
-    {
-        sessions: [
-            { number: 1 },
-            { number: 2 }
-        ],
-        episodes: [
-            ["S1.E1 ∙ Threat","S1.E2 ∙ Sabotage","S1.E3 ∙ Complications","S1.E4 ∙ Gatecrasher","S1.E5 ∙ Falling Apart","S1.E6 ∙ Pieces Of The Puzzle","S1.E7 ∙ Betrayal","S1.E8 ∙ Escape","S1.E9 ∙ End Game","S1.E10 ∙ A Matter Of Choice"],
-            ["S2.E1 ∙ From The Frying Pan To The Fire","S2.E2 ∙ No Visual","S2.E3 ∙ The Trade Off","S2.E4 ∙ Caught Off Guard","S2.E5 ∙ Plan B","S2.E6 ∙ Cat And Mouse","S2.E7 ∙ Sneak In, Sneak Out","S2.E8 ∙ Beginning Of The End","S2.E9 ∙ Connecting The Dots","S2.E10 ∙ Old Friends Reveal Themselves","S2.E11 ∙ Inching Closer","S2.E12 ∙ Against The Clock"]
-        ]
-    },
-    {
-        sessions: [
-            { number: 1 },
-            { number: 2 }
-        ],
-        episodes: [
-            ["S1.E1 ∙ Episode #1", "S1.E2 ∙ Episode #2", "S1.E3 ∙ Episode #3", "S1.E4 ∙ Episode #4", "S1.E5 ∙ Episode #5", "S1.E6 ∙ Episode #6", "S1.E7 ∙ Episode #7", "S1.E8 ∙ Episode #8", "S1.E9 ∙ Episode #9", "S1.E10 ∙ Episode #10"],
-            ["S2.E1 ∙ Episode #1", "S2.E2 ∙ Episode #2", "S2.E3 ∙ Episode #3", "S2.E4 ∙ Episode #4", "S2.E5 ∙ Episode #5", "S2.E6 ∙ Episode #6", "S2.E7 ∙ Episode #7", "S2.E8 ∙ Episode #8", "S2.E9 ∙ Episode #9", "S2.E10 ∙ Episode #10"]
+            ["S1.E1 ∙ Episode #1", "S1.E2 ∙ Episode #2", "S1.E3 ∙ Episode #3", "S1.E4 ∙ Episode #4","S1.E5 ∙ Episode #5","S1.E6 ∙ Episode #6","S1.E7 ∙ Episode #7","S1.E8 ∙ Episode #8","S1.E9 ∙ Episode #9","S1.E10 ∙ Episode #10",]
         ]
     },
     {
@@ -2119,7 +1843,7 @@ const webSeriesData = [
             { number: 1 }
         ],
         episodes: [
-            ["S1.E1 ∙ Homecoming","S1.E2 ∙ Lifting the Veil","S1.E3 ∙ Genesis","S1.E4 ∙ Remains of the Day","S1.E5 ∙ The Enemy Within","S1.E6 ∙ Bittersweet Bye-Bye","S1.E7 ∙ The Day the Music Died","S1.E8 ∙ Resurrection"]
+            ["S1.E1 ∙ Episode #1", "S1.E2 ∙ Episode #2", "S1.E3 ∙ Episode #3", "S1.E4 ∙ Episode #4","S1.E5 ∙ Episode #5","S1.E6 ∙ Episode #6","S1.E7 ∙ Episode #7","S1.E8 ∙ Episode #8","S1.E9 ∙ Episode #9","S1.E10 ∙ Episode #10",]
         ]
     },
     {
@@ -2127,7 +1851,7 @@ const webSeriesData = [
             { number: 1 }
         ],
         episodes: [
-            ["S1.E1 ∙ Episode #1", "S1.E2 ∙ Episode #2", "S1.E3 ∙ Episode #3", "S1.E4 ∙ Episode #4"]
+            ["S1.E1 ∙ Episode #1", "S1.E2 ∙ Episode #2", "S1.E3 ∙ Episode #3", "S1.E4 ∙ Episode #4","S1.E5 ∙ Episode #5","S1.E6 ∙ Episode #6","S1.E7 ∙ Episode #7","S1.E8 ∙ Episode #8","S1.E9 ∙ Episode #9","S1.E10 ∙ Episode #10",]
         ]
     },
     {
@@ -2135,7 +1859,7 @@ const webSeriesData = [
             { number: 1 }
         ],
         episodes: [
-            ["S1.E1 ∙ Mallikajaan: The Queen of Heeramandi","S1.E2 ∙ Fareedanjaan: The Challenger Returns","S1.E3 ∙ Waheedajaan - Scarred for Life","S1.E4 ∙ Alamzeb: The Innocent Pawn","S1.E5 ∙ Tajdar: The Lover's Dilemma","S1.E6 ∙ Tajdar & Alamzeb: Nation vs. Love","S1.E7 ∙ Bibbojaan - Long Live the Revolution","S1.E8 ∙ Heeramandi: The Swan Song"]
+            ["S1.E1 ∙ Episode #1", "S1.E2 ∙ Episode #2", "S1.E3 ∙ Episode #3", "S1.E4 ∙ Episode #4","S1.E5 ∙ Episode #5","S1.E6 ∙ Episode #6","S1.E7 ∙ Episode #7","S1.E8 ∙ Episode #8","S1.E9 ∙ Episode #9","S1.E10 ∙ Episode #10",]
         ]
     },
     {
@@ -2143,32 +1867,81 @@ const webSeriesData = [
             { number: 1 }
         ],
         episodes: [
-            ["S1.E1 ∙ Tum Toh Thehre Pardesi","S1.E2 ∙ Love, Sex Aur Consent","S1.E3 ∙ Love Mein Lagi Hai","S1.E4 ∙ Awaara","S1.E5 ∙ Rebound","S1.E6 ∙ Brahmastra","S1.E7 ∙ Full Circle","S1.E8 ∙ Fanaa","S1.E9 ∙ Tharki"]
+            ["S1.E1 ∙ Episode #1", "S1.E2 ∙ Episode #2", "S1.E3 ∙ Episode #3", "S1.E4 ∙ Episode #4","S1.E5 ∙ Episode #5","S1.E6 ∙ Episode #6","S1.E7 ∙ Episode #7","S1.E8 ∙ Episode #8","S1.E9 ∙ Episode #9","S1.E10 ∙ Episode #10",]
         ]
     },
     {
         sessions: [
-            { number: 1 },
-            { number: 2 }
+            { number: 1 }
         ],
         episodes: [
-            ["S1.E1 ∙ Infection","S1.E2 ∙ Diagnosis","S1.E3 ∙ Complications","S1.E4 ∙ Surgery","S1.E5 ∙ Recovery"],
-            ["S2.E1 ∙ Honeymoon Period","S2.E2 ∙ Donning","S2.E3 ∙ Patient Zero","S2.E4 ∙ Lockdown","S2.E5 ∙ Critical Condition"]
+            ["S1.E1 ∙ Episode #1", "S1.E2 ∙ Episode #2", "S1.E3 ∙ Episode #3", "S1.E4 ∙ Episode #4","S1.E5 ∙ Episode #5","S1.E6 ∙ Episode #6","S1.E7 ∙ Episode #7","S1.E8 ∙ Episode #8","S1.E9 ∙ Episode #9","S1.E10 ∙ Episode #10",]
         ]
     },
     {
         sessions: [
-            { number: 1 },
-            { number: 2 },
-            { number: 3 }
+            { number: 1 }
         ],
         episodes: [
-            ["S1.E1 ∙ Daddy's Little Princess","S1.E2 ∙ Being HUMAyuN","S1.E3 ∙ Pehla Pehla Pyaar, Pehla Pehla Bar","S1.E4 ∙ Unstable Equilibrium","S1.E5 ∙ Triple H Versus The Rock"],
-            ["S2.E1 ∙ Time For A Change","S2.E2 ∙ Sambhog Shastra","S2.E3 ∙ Roop Ki Rani Choron Ka Raja","S2.E4 ∙ Chhayajaal","S2.E5 ∙ A Night To Remember"],
-            ["S3.E1 ∙ It's Complicated","S3.E2 ∙ All is Fair","S3.E3 ∙ Rumours","S3.E4 ∙ Week of Love","S3.E5 ∙ Is this how it ends?"]
+            ["S1.E1 ∙ Episode #1", "S1.E2 ∙ Episode #2", "S1.E3 ∙ Episode #3", "S1.E4 ∙ Episode #4","S1.E5 ∙ Episode #5","S1.E6 ∙ Episode #6","S1.E7 ∙ Episode #7","S1.E8 ∙ Episode #8","S1.E9 ∙ Episode #9","S1.E10 ∙ Episode #10",]
         ]
     },
-    
+    {
+        sessions: [
+            { number: 1 }
+        ],
+        episodes: [
+            ["S1.E1 ∙ Episode #1", "S1.E2 ∙ Episode #2", "S1.E3 ∙ Episode #3", "S1.E4 ∙ Episode #4","S1.E5 ∙ Episode #5","S1.E6 ∙ Episode #6","S1.E7 ∙ Episode #7","S1.E8 ∙ Episode #8","S1.E9 ∙ Episode #9","S1.E10 ∙ Episode #10",]
+        ]
+    },
+    {
+        sessions: [
+            { number: 1 }
+        ],
+        episodes: [
+            ["S1.E1 ∙ Episode #1", "S1.E2 ∙ Episode #2", "S1.E3 ∙ Episode #3", "S1.E4 ∙ Episode #4","S1.E5 ∙ Episode #5","S1.E6 ∙ Episode #6","S1.E7 ∙ Episode #7","S1.E8 ∙ Episode #8","S1.E9 ∙ Episode #9","S1.E10 ∙ Episode #10",]
+        ]
+    },
+    {
+        sessions: [
+            { number: 1 }
+        ],
+        episodes: [
+            ["S1.E1 ∙ Episode #1", "S1.E2 ∙ Episode #2", "S1.E3 ∙ Episode #3", "S1.E4 ∙ Episode #4","S1.E5 ∙ Episode #5","S1.E6 ∙ Episode #6","S1.E7 ∙ Episode #7","S1.E8 ∙ Episode #8","S1.E9 ∙ Episode #9","S1.E10 ∙ Episode #10",]
+        ]
+    },
+    {
+        sessions: [
+            { number: 1 }
+        ],
+        episodes: [
+            ["S1.E1 ∙ Episode #1", "S1.E2 ∙ Episode #2", "S1.E3 ∙ Episode #3", "S1.E4 ∙ Episode #4","S1.E5 ∙ Episode #5","S1.E6 ∙ Episode #6","S1.E7 ∙ Episode #7","S1.E8 ∙ Episode #8","S1.E9 ∙ Episode #9","S1.E10 ∙ Episode #10",]
+        ]
+    },
+    {
+        sessions: [
+            { number: 1 }
+        ],
+        episodes: [
+            ["S1.E1 ∙ Episode #1", "S1.E2 ∙ Episode #2", "S1.E3 ∙ Episode #3", "S1.E4 ∙ Episode #4","S1.E5 ∙ Episode #5","S1.E6 ∙ Episode #6","S1.E7 ∙ Episode #7","S1.E8 ∙ Episode #8","S1.E9 ∙ Episode #9","S1.E10 ∙ Episode #10",]
+        ]
+    },
+    {
+        sessions: [
+            { number: 1 }
+        ],
+        episodes: [
+            ["S1.E1 ∙ Episode #1", "S1.E2 ∙ Episode #2", "S1.E3 ∙ Episode #3", "S1.E4 ∙ Episode #4","S1.E5 ∙ Episode #5","S1.E6 ∙ Episode #6","S1.E7 ∙ Episode #7","S1.E8 ∙ Episode #8","S1.E9 ∙ Episode #9","S1.E10 ∙ Episode #10",]
+        ]
+    },
+    {
+        sessions: [
+            { number: 1 }
+        ],
+        episodes: [
+            ["S1.E1 ∙ Episode #1", "S1.E2 ∙ Episode #2", "S1.E3 ∙ Episode #3", "S1.E4 ∙ Episode #4","S1.E5 ∙ Episode #5","S1.E6 ∙ Episode #6","S1.E7 ∙ Episode #7","S1.E8 ∙ Episode #8","S1.E9 ∙ Episode #9","S1.E10 ∙ Episode #10",]
+        ]
+    }
 ];
 
 function addStyles(styles) {
@@ -2231,7 +2004,7 @@ function showContent(seriesIndex) {
 
 document.addEventListener("DOMContentLoaded", () => {
     addStyles(styles);
-    for (let i = 1; i <= 32; i++) {
+    for (let i = 1; i <= 24; i++) {
         document.getElementById(`button${i}`).addEventListener('click', () => {
             showContent(i - 1);
         });
